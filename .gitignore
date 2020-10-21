@@ -1,0 +1,23 @@
+# IDEs
+.vscode
+.idea
+
+# Modules
+node_modules
+*.log
+*.gz
+
+# folders
+build/
+logs/
+
+# Env
+.env
+
+# Coveralls
+coverage
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
