@@ -1,5 +1,5 @@
 {
-  "name": "traning-simple-api",
+  "name": "training-simple-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,12 +10,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "eslint": "^7.11.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",
     "express": "^4.17.1",
     "faker": "^5.1.0",
-    "nodemon": "^2.0.5"
+    "iconv-lite": "^0.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.5",
+    "passport": "^0.4.1",
+    "passport-http-bearer": "^1.0.1"
   }
 }
