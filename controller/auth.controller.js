@@ -2,6 +2,7 @@
 const jwt = require('jsonwebtoken');
 const { exec } = require('child_process');
 const iconv = require('iconv-lite');
+const bc = require('bcrypt');
 
 // Model
 const tokenModel = require('../model/token.model');
@@ -19,6 +20,12 @@ class UserController {
 
       if (!user) {
         throw new Error('User not found!');
+      }
+
+      const pass = await bc.compare(req.body.password, user.password);
+
+      if (!pass) {
+        throw new Error('Incorrect password!');
       }
 
       const token = jwt.sign({ id: user.userId, password: user.password }, process.env.PASSWORD_JWT);

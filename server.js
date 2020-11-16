@@ -24,6 +24,10 @@ app.use(passport.session());
 
 // Routs
 app.use('/auth', router);
+app.use('*', (req, res, next) => {
+  res.status(404).json({ message: `Path ${req.originalUrl} not found!` });
+  next();
+});
 
 const optMongo = {
   promiseLibrary: global.Promise,
@@ -52,3 +56,5 @@ async function start() {
 }
 
 start();
+
+module.exports = app;

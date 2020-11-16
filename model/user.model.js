@@ -11,7 +11,6 @@ const setUserModel = new Schema({
     type: String,
     required: true,
     minlength: 5,
-    maxlength: 15,
   },
   userId: {
     type: String,
