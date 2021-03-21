@@ -1,4 +1,4 @@
-const { Schema, model, set } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const setUserModel = new Schema({
   name: {
