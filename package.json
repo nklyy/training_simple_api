@@ -26,10 +26,10 @@
     "iconv-lite": "^0.6.2",
     "jest": "^26.6.3",
     "jest-runner-eslint": "^0.10.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.1",
-    "nodemon": "^2.0.7",
-    "passport": "^0.4.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.13.6",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
     "passport-http-bearer": "^1.0.1",
     "supertest": "^6.1.3"
   }
